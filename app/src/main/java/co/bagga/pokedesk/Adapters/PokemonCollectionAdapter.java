@@ -1,5 +1,7 @@
 package co.bagga.pokedesk.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +9,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import co.bagga.pokedesk.Activities.PokemonDetailActivity;
 import co.bagga.pokedesk.Pokemon;
 import co.bagga.pokedesk.R;
 import co.bagga.pokedesk.ViewHolders.PokemonViewHolder;
@@ -31,8 +34,20 @@ public class PokemonCollectionAdapter extends RecyclerView.Adapter<PokemonViewHo
     }
 
     @Override
-    public void onBindViewHolder(PokemonViewHolder holder, int position) {
-        holder.updateView(pokemonArrayList.get(position));
+    public void onBindViewHolder(final PokemonViewHolder holder, int position) {
+        final Pokemon pokemon = pokemonArrayList.get(position);
+        holder.updateView(pokemon);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startPokemonDetailActivity(holder.itemView.getContext(), pokemon);
+            }
+        });
+    }
+
+    private void startPokemonDetailActivity(Context context, Pokemon pokemon) {
+        Intent i = new Intent(context, PokemonDetailActivity.class);
+        context.startActivity(i);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package co.bagga.pokedesk;
+package co.bagga.pokedesk.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import co.bagga.pokedesk.Adapters.PokemonCollectionAdapter;
+import co.bagga.pokedesk.R;
 import co.bagga.pokedesk.Utils.PokemonCollectionCSVParser;
 
 public class MainActivity extends AppCompatActivity {
