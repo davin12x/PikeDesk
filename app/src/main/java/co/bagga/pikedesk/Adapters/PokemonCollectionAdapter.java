@@ -54,6 +54,6 @@ public class PokemonCollectionAdapter extends RecyclerView.Adapter<PokemonViewHo
 
     @Override
     public int getItemCount() {
-        return pokemonArrayList.size();
+        return 718;
     }
 }
