@@ -10,7 +10,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import co.bagga.pokedesk.Activities.PokemonDetailActivity;
-import co.bagga.pokedesk.Pokemon;
+import co.bagga.pokedesk.Constants;
+import co.bagga.pokedesk.Models.Pokemon;
 import co.bagga.pokedesk.R;
 import co.bagga.pokedesk.ViewHolders.PokemonViewHolder;
 
@@ -47,6 +48,7 @@ public class PokemonCollectionAdapter extends RecyclerView.Adapter<PokemonViewHo
 
     private void startPokemonDetailActivity(Context context, Pokemon pokemon) {
         Intent i = new Intent(context, PokemonDetailActivity.class);
+        i.putExtra(Constants.POKEMON_BUNDLE_ID, pokemon);
         context.startActivity(i);
     }
 

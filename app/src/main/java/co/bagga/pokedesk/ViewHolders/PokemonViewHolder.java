@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import co.bagga.pokedesk.Pokemon;
+import co.bagga.pokedesk.Models.Pokemon;
 import co.bagga.pokedesk.R;
 
 /**
@@ -26,6 +26,6 @@ public class PokemonViewHolder extends RecyclerView.ViewHolder {
 
     public void updateView(Pokemon pokemon) {
         pokemonImage.setImageResource(pokemon.getImageView());
-        pokemonNameTextView.setText(pokemon.getName());
+        pokemonNameTextView.setText(pokemon.getName().toUpperCase());
     }
 }

@@ -1,4 +1,6 @@
-package co.bagga.pokedesk;
+package co.bagga.pokedesk.Models;
+
+import java.io.Serializable;
 
 /**
  * Created by bagga on 2017-07-13.
@@ -6,13 +8,15 @@ package co.bagga.pokedesk;
  * Pokemon Model Object
  */
 
-public class Pokemon {
+public class Pokemon implements Serializable{
     private int imageView;
     private String name;
+    private int id;
 
-    public Pokemon(int imageView, String name) {
+    public Pokemon(int imageView, int id, String name) {
         this.imageView = imageView;
         this.name = name;
+        this.id = id;
     }
 
     public int getImageView() {
@@ -21,5 +25,9 @@ public class Pokemon {
 
     public String getName() {
         return name;
+    }
+
+    public int getId() {
+        return id;
     }
 }

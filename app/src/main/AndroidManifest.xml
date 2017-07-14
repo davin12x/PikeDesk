@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.bagga.pokedesk">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".Activities.MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.PokemonDetailActivity"
-            android:parentActivityName=".Activities.MainActivity"
-            ></activity>
+            android:parentActivityName=".Activities.MainActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="11adad65c9c02499ee06083cf81ca07a861a2fb3"
+            />
     </application>
 
 </manifest>

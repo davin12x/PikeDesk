@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import co.bagga.pokedesk.Pokemon;
+import co.bagga.pokedesk.Models.Pokemon;
 
 /**
  * Created by bagga on 2017-07-13.
@@ -28,7 +28,7 @@ public class PokemonCollectionCSVParser {
             while ((line = reader.readLine()) != null) {
                 String[] pokemon = line.split(",");
                 int resourceId = context.getResources().getIdentifier("pokemon_" + pokemon[0] , "drawable", context.getPackageName());
-                pokemonArrayList.add(new Pokemon(resourceId, pokemon[1]));
+                pokemonArrayList.add(new Pokemon(resourceId, Integer.valueOf(pokemon[0]), pokemon[1]));
             }
         } catch (IOException e) {
             e.printStackTrace();
