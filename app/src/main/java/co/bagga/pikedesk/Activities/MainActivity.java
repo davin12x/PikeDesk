@@ -1,17 +1,15 @@
-package co.bagga.pokedesk.Activities;
+package co.bagga.pikedesk.Activities;
 
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 
-import co.bagga.pokedesk.Adapters.PokemonCollectionAdapter;
-import co.bagga.pokedesk.R;
-import co.bagga.pokedesk.Utils.PokemonCollectionCSVParser;
+import co.bagga.pikedesk.Adapters.PokemonCollectionAdapter;
+import co.bagga.pikedesk.R;
+import co.bagga.pikedesk.Utils.PokemonCollectionCSVParser;
 import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 

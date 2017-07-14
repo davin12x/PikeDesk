@@ -1,4 +1,4 @@
-package co.bagga.pokedesk.Adapters;
+package co.bagga.pikedesk.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import co.bagga.pokedesk.Activities.PokemonDetailActivity;
-import co.bagga.pokedesk.Constants;
-import co.bagga.pokedesk.Models.Pokemon;
-import co.bagga.pokedesk.R;
-import co.bagga.pokedesk.ViewHolders.PokemonViewHolder;
+import co.bagga.pikedesk.Activities.PokemonDetailActivity;
+import co.bagga.pikedesk.Constants;
+import co.bagga.pikedesk.Models.Pokemon;
+import co.bagga.pikedesk.R;
+import co.bagga.pikedesk.ViewHolders.PokemonViewHolder;
 
 /**
  * Created by bagga on 2017-07-13.

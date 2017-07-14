@@ -1,12 +1,12 @@
-package co.bagga.pokedesk.ViewHolders;
+package co.bagga.pikedesk.ViewHolders;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import co.bagga.pokedesk.Models.Pokemon;
-import co.bagga.pokedesk.R;
+import co.bagga.pikedesk.Models.Pokemon;
+import co.bagga.pikedesk.R;
 
 /**
  * Created by bagga on 2017-07-13.

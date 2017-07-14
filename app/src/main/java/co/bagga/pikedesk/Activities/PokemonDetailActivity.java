@@ -1,4 +1,4 @@
-package co.bagga.pokedesk.Activities;
+package co.bagga.pikedesk.Activities;
 
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
@@ -13,14 +13,14 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
-import co.bagga.pokedesk.Constants;
-import co.bagga.pokedesk.Models.Pokemon;
-import co.bagga.pokedesk.Models.PokemonDescription;
-import co.bagga.pokedesk.Network.HttpCallBack;
-import co.bagga.pokedesk.Network.RequestGenerator;
-import co.bagga.pokedesk.Models.PokemonModel;
-import co.bagga.pokedesk.R;
-import co.bagga.pokedesk.Utils.PokemonCollectionCSVParser;
+import co.bagga.pikedesk.Constants;
+import co.bagga.pikedesk.Models.Pokemon;
+import co.bagga.pikedesk.Models.PokemonDescription;
+import co.bagga.pikedesk.Network.HttpCallBack;
+import co.bagga.pikedesk.Network.RequestGenerator;
+import co.bagga.pikedesk.Models.PokemonModel;
+import co.bagga.pikedesk.R;
+import co.bagga.pikedesk.Utils.PokemonCollectionCSVParser;
 
 public class PokemonDetailActivity extends AppCompatActivity {
     private ImageView currentPokemon, evolutionPokemonImageView;

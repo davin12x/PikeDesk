@@ -1,4 +1,4 @@
-package co.bagga.pokedesk.Network;
+package co.bagga.pikedesk.Network;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package co.bagga.pokedesk;
+package co.bagga.pikedesk;
 
 import org.junit.Test;
 

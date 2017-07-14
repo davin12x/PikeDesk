@@ -1,11 +1,10 @@
-package co.bagga.pokedesk.Network;
+package co.bagga.pikedesk.Network;
 
 import android.content.Context;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
 public class VolleyRequest {

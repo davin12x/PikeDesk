@@ -1,4 +1,4 @@
-package co.bagga.pokedesk;
+package co.bagga.pikedesk;
 
 /**
  * Created by bagga on 2017-07-13.

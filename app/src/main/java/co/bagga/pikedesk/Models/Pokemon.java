@@ -1,4 +1,4 @@
-package co.bagga.pokedesk.Models;
+package co.bagga.pikedesk.Models;
 
 import java.io.Serializable;
 
